@@ -1,0 +1,19 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "DEVOPS with AWS" #STRING
+    DURATION: 120 #NUMBER
+    TOOLS: #LIST [ ] this is indicates list data type
+      - LINUX
+      - AWS
+      - DOCKER
+    CONTENTS:
+      SHELL: LINUX
+      CLOUD: AWS
+      CI: JENKINS
+    LIVE: true
+  tasks:
+    - name: variables printin with data types
+      ansible.builtin.debug:
+        msg: " i am learning {{ COURSE }} timing {{ DURATION }},is it live {{ LIVE }} and tools they are teaching {{ TOOLS }} and contents {{ CONTENETS }} "
