@@ -3,12 +3,12 @@
   connection: local
   vars:
     GREET: "PLAY LEVEL"
-  vars_prompt:
-    - name: GREET
-      prompt: enter prompt GREET name
-      private: false
-  vars_files:
-    - file_vars.yaml
+  # vars_prompt:
+  #   - name: GREET
+  #     prompt: enter prompt GREET name
+  #     private: false
+  # vars_files:
+  #   - file_vars.yaml
   tasks:
     - name: print variables preferences
       # vars:
@@ -21,4 +21,5 @@
   # COMMAND LEVEL VARS
   # TASK LEVEL
   # FILE LEVEL
+  # PROMPT LEVEL
   #
