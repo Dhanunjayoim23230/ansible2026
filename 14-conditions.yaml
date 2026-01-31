@@ -11,9 +11,9 @@
     - name: print number is greate than 10
       ansible.builtin.debug:
         msg: " Number {{ Number }} is greter than 10 "
-      when: {{ Number }} > 10
+      when: Number > 10
 
     - name: print number is less than or equal to 10
       ansible.builtin.debug:
         msg: "Number {{ Number }} is less than 10"
-      when: {{ Number }} <= 10
+      when: Number <= 10
