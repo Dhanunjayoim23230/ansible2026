@@ -13,4 +13,4 @@
   tasks:
     - name: prompt variables
       ansible.builtin.debug:
-        msg: " Hellow i am learngin {{ COURSE }}, timing is {{ DURATION }}, trianer is {{ TRAINER }}
+        msg: "Hellow i am learngin {{ COURSE }}, timing is {{ DURATION }}, trianer is {{ TRAINER }}"
