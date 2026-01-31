@@ -6,7 +6,7 @@
   vars_prompt:
     - name: GREET
       prompt: enter prompt GREET name
-      private: "PROMPT LEVEL"
+      private: false
   vars_files:
     - file_vars.yaml
   tasks:
