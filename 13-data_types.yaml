@@ -16,4 +16,4 @@
   tasks:
     - name: variables printin with data types
       ansible.builtin.debug:
-        msg: " i am learning {{ COURSE }} timing {{ DURATION }},is it live {{ LIVE }} and tools they are teaching {{ TOOLS }} and contents {{ CONTENETS }} "
+        msg: " i am learning {{ COURSE }} timing {{ DURATION }},is it live {{ LIVE }} and tools they are teaching {{ TOOLS }} and contents {{ CONTENTS }} "
