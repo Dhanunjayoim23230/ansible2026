@@ -1,7 +1,7 @@
 - name: variables prompting for input
   hosts: local
   connection: local
-  vars:
+  vars_prompt:
     - name: COURSE
       prompt: enter COURSE name"
       private: false
