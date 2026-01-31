@@ -1,0 +1,16 @@
+- name: variable preference
+  hosts: local
+  connection: local
+  vars:
+    GREET: "PLAY LEVEL"
+  vars_prompt:
+    - name: GREET
+      prompt: enter prompt GREET name
+      private: "PROMPT LEVEL"
+  vars_files:
+    - file_vars.yaml
+  tasks:
+    - name: print variables preferences
+      GREET: "TASK LEVEL"
+      ansible.builtin.debug:
+        msg: "Hello {{ GREET }}"
