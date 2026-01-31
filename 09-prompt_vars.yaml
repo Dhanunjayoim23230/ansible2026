@@ -1,0 +1,16 @@
+- name: variables prompting for input
+  hosts: local
+  connection: local
+  vars:
+    - name: COURSE
+      prompt: enter COURSE name"
+      private: false
+    - name: DURATION
+      prompt: "enter duration"
+      private: false
+    - name: trainer
+      prompt: enter trainer name
+  tasks:
+    - name: prompt variables
+      ansible.builtin.debug:
+        msg: " Hellow i am learngin {{ COURSE }}, timing is {{ DURATION }}, trianer is {{ TRAINER }}
