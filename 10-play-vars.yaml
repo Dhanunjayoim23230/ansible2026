@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    course: "DEVAOS with AWS"
+    course: "DEVOPS with AWS"
     duration: 120hrs
     trainer: "Dhanunjaya reddy"
   tasks:
