@@ -11,7 +11,13 @@
     - file_vars.yaml
   tasks:
     - name: print variables preferences
-      vars:
-        GREET: "TASK LEVEL"
+      # vars:
+      #   GREET: "TASK LEVEL"
       ansible.builtin.debug:
         msg: "Hello {{ GREET }}"
+
+
+#Level of variabls preference
+  # COMMAND LEVEL VARS
+  # TASK LEVEL
+  #
