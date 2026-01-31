@@ -8,7 +8,7 @@
       - LINUX
       - AWS
       - DOCKER
-    CONTENTS:
+    CONTENTS:  #{ } this indicates MAP
       SHELL: LINUX
       CLOUD: AWS
       CI: JENKINS
