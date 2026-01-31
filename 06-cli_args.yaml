@@ -1,0 +1,7 @@
+- name: take varialble arguments from command line
+  hosts: local
+  connection: local
+  tasks:
+    - name: Take arguments form CLI
+      ansible.builtin.debug:
+        msg: " i am learnign {{ COURSE }}, and duration {{ DURATION }} and trianer is {{ TRAINER }}"
