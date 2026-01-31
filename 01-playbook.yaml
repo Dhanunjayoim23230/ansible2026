@@ -4,5 +4,5 @@
   tasks:
     - name: ping the server
       ansible.builtin.ping:
-        msg: "ping the server"
+        # msg: "ping the server"
         
