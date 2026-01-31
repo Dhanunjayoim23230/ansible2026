@@ -1,0 +1,11 @@
+- name: take varialbes from task level
+  hosts: local
+  connection: local
+  tasks:
+  - name: define variables in task level
+    vars:
+      COURSE: "devops with AWS"
+      DURATION: 120HRS
+      TRAINER: "DHANUNJAYA REDDY"
+    ansible.builtin.debug:
+      msg: "i am learnging {{ COURSE }}, and duraiton is {{ DURATION }} and trainer is {{ TRAINER }}"
