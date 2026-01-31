@@ -1,8 +1,12 @@
 - name: print the number greater or less than 10
   hosts: local
   connection: local
-  vars:
-    Number: 15
+  # vars:
+  #   Number: 15
+  vars_prompt:
+    - name: Number
+      prompt: enter any number
+      private: false
   tasks:
     - name: print number is greate than 10
       ansible.builtin.debug:
