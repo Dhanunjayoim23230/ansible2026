@@ -1,6 +1,6 @@
 - name: ping the server
-  hosts: local
-  connection: local
+  hosts: web  #ping module fails to local host, it msut be other server
+  #connection: local
   tasks:
     - name: ping the server
       ansible.builtin.ping:
