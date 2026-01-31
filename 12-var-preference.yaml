@@ -1,8 +1,8 @@
 - name: variable preference
   hosts: local
   connection: local
-  vars:
-    GREET: "PLAY LEVEL"
+  # vars:
+  #   GREET: "PLAY LEVEL"
   # vars_prompt:
   #   - name: GREET
   #     prompt: enter prompt GREET name
@@ -22,4 +22,4 @@
   # TASK LEVEL
   # FILE LEVEL
   # PROMPT LEVEL
-  #
+  # PLAY LEVEL
